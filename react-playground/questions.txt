@@ -1,0 +1,14 @@
+1. What situations would be good to use context?
+  Context is primarily used when some data needs to be accessible 
+  by many components at different nesting levels. 
+
+2. If you need to pass a prop down 1 or 2 levels, is context necessary?
+  It is no necessary and it should be used sparingly 
+  because it makes component reuse more difficult.
+
+3. Can you pass a component instance as a prop to avoid the need for context?
+  Yes. The benefit to passing in a component is that you will not 
+  be passing in a new function to be rendered each time.
+
+4. Can you write your own components that accept render props?
+  Yes. It is helpful if two or more context values are often used together. 
